@@ -20,17 +20,19 @@
 \geometry{top=2.5cm, bottom=2.5cm, left=2.8cm, right=2.5cm}
 \hypersetup{colorlinks=false, hidelinks}
 
-\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}[\titlerule]
+% Encabezados de seccion sin linea decorativa
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
 \titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
 \titlespacing*{\section}{0pt}{14pt}{6pt}
 \titlespacing*{\subsection}{0pt}{10pt}{4pt}
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\small\textbf{Unidad Did\'actica --- Funciones Trigonom\'etricas}}
+\fancyhead[L]{\small Unidad Did\'actica --- Funciones Trigonom\'etricas}
 \fancyhead[R]{\small Exploraci\'on H\'aptica}
 \fancyfoot[C]{\small\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
+% Sin linea bajo el encabezado
+\renewcommand{\headrulewidth}{0pt}
 \setlength{\headheight}{15pt}
 
 \renewcommand{\arraystretch}{1.3}
@@ -42,17 +44,16 @@
 \begin{document}
 
 % ============================================================
-% PORTADA
+% PORTADA (alineada a la izquierda)
 % ============================================================
 \begin{titlepage}
-\centering
+\raggedright
 
 \vspace*{3.5cm}
 
 {\LARGE\bfseries UNIDAD DID\'ACTICA}\\[0.8em]
 {\Large Funciones Trigonom\'etricas}\\[0.5em]
-{\large\itshape Exploraci\'on h\'aptica de $\operatorname{sen}(x)$,
-$\cos(x)$ y $\tan(x)$}
+{\large Exploraci\'on h\'aptica de la funci\'on $\operatorname{sen}(x)$}
 
 \vspace{4cm}
 
@@ -68,30 +69,26 @@ $\cos(x)$ y $\tan(x)$}
 \end{titlepage}
 
 % ============================================================
-% PÁGINA DE DATOS DE LA SESIÓN
+% PAGINA DE DATOS DE LA SESION (alineada a la izquierda)
 % ============================================================
 \thispagestyle{fancy}
-\begin{center}
+
 {\large\bfseries Instituci\'on Educativa Alberto Lleras Camargo}\\[0.3em]
 {\normalsize Colegio Alberto Lleras Camargo}
-\end{center}
 
 \vspace{2.5cm}
 
-\begin{center}
 \begin{tabular}{rl}
 \textbf{Jornada:}         & Diurna \\[14pt]
 \textbf{Grado:}           & D\'ecimo (10\textsuperscript{o}) \\[14pt]
 \textbf{Docente titular:} & \underline{\hspace{6cm}} \\[14pt]
 \textbf{Fecha:}           & \underline{\hspace{6cm}} \\
 \end{tabular}
-\end{center}
 
 \vspace{1.5cm}
-\begin{center}
-\itshape Sesi\'on de dos horas dedicada a la exploraci\'on h\'aptica de la
-funci\'on $\operatorname{sen}(x)$.
-\end{center}
+
+Sesi\'on de dos horas dedicada a la exploraci\'on h\'aptica de la funci\'on
+$\operatorname{sen}(x)$.
 
 \newpage
 
@@ -101,47 +98,48 @@ funci\'on $\operatorname{sen}(x)$.
 
 El estudio de las funciones trigonom\'etricas exige que el estudiante construya
 una imagen mental clara de curvas que oscilan y se repiten de forma regular. La
-\textbf{funci\'on seno} es la puerta de entrada natural a este conjunto de
-funciones: su forma ondulada, acotada y peri\'odica permite introducir con
-claridad los conceptos de m\'aximo, m\'inimo, per\'iodo, amplitud y rango. Para
-estudiantes con baja o nula visi\'on, los recursos visuales convencionales
-resultan inaccesibles sin una mediaci\'on pedag\'ogica adecuada.
+funci\'on seno es la puerta de entrada natural a este conjunto de funciones: su
+forma ondulada, acotada y peri\'odica permite introducir con claridad los
+conceptos de m\'aximo, m\'inimo, per\'iodo, amplitud y rango. Para estudiantes
+con baja o nula visi\'on, los recursos visuales convencionales resultan
+inaccesibles sin una mediaci\'on pedag\'ogica adecuada.
 
-Esta sesi\'on propone un canal de acceso alternativo: la \textbf{exploraci\'on
-h\'aptica mediante una l\'amina en relieve del seno}. El estudiante recorre la
-curva con los dedos, asociando cada forma y posici\'on a un valor matem\'atico
-preciso. El conocimiento construido es matem\'aticamente id\'entico al que
-obtiene un estudiante vidente; \'unicamente el canal sensorial es diferente.
+Esta sesi\'on propone un canal de acceso alternativo: la exploraci\'on h\'aptica
+mediante una l\'amina en relieve del seno. El estudiante recorre la curva con los
+dedos, asociando cada forma y posici\'on a un valor matem\'atico preciso. El
+conocimiento construido es matem\'aticamente id\'entico al que obtiene un
+estudiante vidente; \'unicamente el canal sensorial es diferente.
 
-La sesi\'on se fundamenta en el \textbf{Dise\~no Universal para el Aprendizaje
-(DUA)}, el aprendizaje multisensorial (tacto + voz + movimiento), el andamiaje
-progresivo y la promoci\'on de la autonom\'ia del estudiante.
+La sesi\'on se fundamenta en el Dise\~no Universal para el Aprendizaje (DUA), el
+aprendizaje multisensorial (tacto + voz + movimiento), el andamiaje progresivo y
+la promoci\'on de la autonom\'ia del estudiante.
 
 % ============================================================
 \section{Secuencia Metodol\'ogica (Plan)}
 % ============================================================
 
-\noindent\textbf{Duraci\'on total de la sesi\'on: 120 minutos (2 horas)}
+\noindent Duraci\'on total de la sesi\'on: 120 minutos (2 horas).
 
 \vspace{8pt}
 
-% ------ TABLA PLAN -------
-% Columnas: Etapa | Tiempo | Actividades | Objetivo | Conceptos | Estrategia | P.Investigacion
-\setlength{\tabcolsep}{4pt}
+% ------ TABLA PLAN (ajustada para no salirse de la hoja) -------
+{\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.2}
 \noindent
-\begin{tabular}{|M{1.6cm}|M{1.3cm}|L{2.8cm}|L{2.4cm}|L{2.2cm}|L{2.0cm}|L{2.4cm}|}
+\begin{tabular}{|M{1.2cm}|M{0.95cm}|L{2.6cm}|L{2.2cm}|L{2.1cm}|L{1.9cm}|L{2.5cm}|}
 \hline
-\textbf{Etapas} &
-\textbf{Tiempo} &
-\textbf{Actividades} &
-\textbf{Objetivo} &
-\textbf{Conceptos involucrados} &
-\textbf{Estrategias} &
-\textbf{Pregunta de investigaci\'on} \\
+Etapas &
+Tiempo &
+Actividades &
+Objetivo &
+Conceptos involucrados &
+Estrategias &
+Pregunta de investigaci\'on \\
 \hline
 
 % ---- FILA INICIAL 1 ----
-\multirow{2}{*}{\rotatebox{90}{\textbf{INICIAL}}}
+\multirow{2}{*}{\rotatebox{90}{INICIAL}}
 & 5 min
 & Protocolarias: saludo, llamado a lista, pautas de convivencia.
 & Crear clima de aula de confianza.
@@ -160,18 +158,18 @@ progresivo y la promoci\'on de la autonom\'ia del estudiante.
 \hline
 
 % ---- FILA DESARROLLO 1 ----
-\multirow{4}{*}{\rotatebox{90}{\textbf{DESARROLLO}}}
+\multirow{4}{*}{\rotatebox{90}{DESARROLLO}}
 & 10 min
 & Ideas o conceptos previos. (Algunos identificados en conductas de entrada.)
 & Activar saberes sobre oscilaci\'on y repetici\'on.
 & Oscilaci\'on, periodicidad (intuitivo).
 & Lluvia de ideas.
-& ?`Con qu\'e claridad llegan al t\'ermino ``periodicidad''? \\
+& ?`Con qu\'e claridad llegan al t\'ermino periodicidad? \\
 \cline{2-7}
 
 % ---- FILA DESARROLLO 2 ----
 & 15 min
-& \textbf{Motivaci\'on:} introducci\'on verbal --- ?`Qu\'e vamos a sentir? Met\'afora de la colina y la ola.
+& Motivaci\'on: introducci\'on verbal --- ?`qu\'e vamos a sentir? Met\'afora de la colina y la ola.
 & Motivar y contextualizar la exploraci\'on h\'aptica.
 & Funci\'on, entrada, salida, oscilaci\'on.
 & Relato guiado y met\'afora sensorial.
@@ -180,40 +178,38 @@ progresivo y la promoci\'on de la autonom\'ia del estudiante.
 
 % ---- FILA DESARROLLO 3 ----
 & 30 min
-& \textbf{Exploraci\'on del seno.} Recorrido de la l\'amina $\operatorname{sen}(x)$. Conceptualizaci\'on y teorizaci\'on.
+& Exploraci\'on del seno. Recorrido de la l\'amina $\operatorname{sen}(x)$. Conceptualizaci\'on y teorizaci\'on.
 & Que el estudiante identifique m\'aximo, m\'inimo, per\'iodo y rango del seno.
 & $\operatorname{sen}(x)$, per\'iodo, amplitud, rango.
-& Exploraci\'on h\'aptica + verbalizaci\'on.
+& Exploraci\'on h\'aptica y verbalizaci\'on.
 & ?`Asocia correctamente cada punto palpado con su valor num\'erico? \\
 \cline{2-7}
 
 % ---- FILA DESARROLLO 4 ----
 & 25 min
-& \textbf{Aplicaci\'on y profundizaci\'on.} Localizaci\'on de puntos clave y verificaci\'on de la periodicidad recorriendo un segundo ciclo.
+& Aplicaci\'on y profundizaci\'on. Localizaci\'on de puntos clave y verificaci\'on de la periodicidad recorriendo un segundo ciclo.
 & Que el estudiante consolide la lectura h\'aptica del seno y confirme su periodicidad.
 & Ceros, m\'aximo, m\'inimo, periodicidad ($T=2\pi$).
-& Exploraci\'on guiada + dictado de valores.
+& Exploraci\'on guiada y dictado de valores.
 & ?`Reconoce de forma aut\'onoma que la forma se repite cada $2\pi$? \\
 \hline
 
 % ---- FILA CIERRE ----
-\textbf{CIERRE}
+CIERRE
 & 20 min
 & S\'intesis y conclusi\'on. Preguntas guiadas con la l\'amina. Tarea extraclase.
 & Consolidar aprendizajes y asignar trabajo aut\'onomo.
 & Todos los conceptos del seno trabajados.
 & Preguntas con respuesta h\'aptica.
-& ?`Puede el estudiante relacionar el valor h\'aptico con el valor num\'erico de forma aut\'onoma? \\
+& ?`Puede el estudiante relacionar el valor h\'aptico con el num\'erico de forma aut\'onoma? \\
 \hline
 
 \end{tabular}
+}
 
 % ============================================================
 \section{Desarrollo del Plan}
 % ============================================================
-
-\textit{Todo lo siguiente est\'a escrito y resuelto seg\'un la estructura de la
-unidad did\'actica.}
 
 % -----------------------------------------------------------
 \subsection{1. Actividades protocolarias \normalfont(5 min)}
@@ -228,9 +224,8 @@ del compa\~nero.
 \textbf{Recursos:} planilla de asistencia; l\'amina h\'aptica guardada a\'un
 en la carpeta.
 
-\textbf{Pregunta de investigaci\'on (actitudinal):} \textit{``?`C\'omo le
-describir\'ias a alguien, sin verla, una forma que s\'olo tus manos pueden
-sentir?''}
+\textbf{Pregunta de investigaci\'on (actitudinal):} ?`c\'omo le describir\'ias a
+alguien, sin verla, una forma que s\'olo tus manos pueden sentir?
 
 % -----------------------------------------------------------
 \subsection{2. Revisi\'on de tarea extraclase \normalfont(15 min)}
@@ -239,15 +234,13 @@ sentir?''}
 2 o 3 estudiantes compartir sus respuestas oralmente. Se identifican:
 
 \begin{itemize}[itemsep=2pt]
-  \item Dificultades en la comprensi\'on de ``entrada'' y ``salida'' de una
-        funci\'on.
+  \item Dificultades en la comprensi\'on de entrada y salida de una funci\'on.
   \item Confusiones entre valor m\'aximo y m\'inimo.
-  \item Uso impreciso de ``repetici\'on'' frente a ``periodicidad''.
+  \item Uso impreciso de repetici\'on frente a periodicidad.
 \end{itemize}
 
-\textbf{Pregunta de investigaci\'on:} \textit{``?`Qu\'e errores conceptuales o
-procedimentales persisten desde la sesi\'on anterior y requieren refuerzo
-hoy?''}
+\textbf{Pregunta de investigaci\'on:} ?`qu\'e errores conceptuales o
+procedimentales persisten desde la sesi\'on anterior y requieren refuerzo hoy?
 
 % -----------------------------------------------------------
 \subsection{3. Ideas previas \normalfont(10 min)}
@@ -258,45 +251,43 @@ El docente plantea oralmente tres preguntas sin corregir las respuestas en este
 momento:
 
 \begin{enumerate}[itemsep=3pt]
-  \item ?`Qu\'e significa que algo sea \textit{peri\'odico}?
+  \item ?`Qu\'e significa que algo sea peri\'odico?
   \item ?`Conocen alg\'un fen\'omeno que suba y baje de forma regular?
-  \item ?`Qu\'e esperan ``sentir'' en una l\'amina que representa una funci\'on?
+  \item ?`Qu\'e esperan sentir en una l\'amina que representa una funci\'on?
 \end{enumerate}
 
 \textbf{Ideas previas esperadas:} onda, ritmo, ciclo, repetici\'on, m\'aximo,
 m\'inimo.
 
-\textbf{Pregunta de investigaci\'on:} \textit{``?`Con qu\'e claridad conceptual
-llegan los estudiantes al t\'ermino `periodicidad'?''}
+\textbf{Pregunta de investigaci\'on:} ?`con qu\'e claridad conceptual llegan los
+estudiantes al t\'ermino periodicidad?
 
 % -----------------------------------------------------------
 \subsection{4. Presentaci\'on del tema}
 
 \subsubsection*{Motivaci\'on --- ?`Qu\'e vamos a sentir? \normalfont(15 min)}
 
-Antes de tocar la l\'amina, el docente establece el marco con lenguaje
-concreto:
+Antes de tocar la l\'amina, el docente establece el marco con lenguaje concreto:
 
 \begin{itemize}[itemsep=3pt]
-  \item Una \textbf{funci\'on} es una relaci\'on entre una entrada (el \'angulo
-        $x$) y una salida (el valor de la funci\'on).
-  \item La funci\'on seno \textbf{oscila}: sube y baja de forma repetida e
-        indefinida.
-  \item La l\'amina representa esa oscilaci\'on como \textbf{relieve f\'isico}:
+  \item Una funci\'on es una relaci\'on entre una entrada (el \'angulo $x$) y una
+        salida (el valor de la funci\'on).
+  \item La funci\'on seno oscila: sube y baja de forma repetida e indefinida.
+  \item La l\'amina representa esa oscilaci\'on como relieve f\'isico:
         alto $=$ positivo; nivel del papel $=$ cero; hundido $=$ negativo.
 \end{itemize}
 
-\textbf{Met\'afora de inicio:}
+Met\'afora de inicio:
 
 \begin{quote}
-\itshape ``Imaginen que caminan por una colina. Cuando ascienden, el valor de
-la funci\'on crece. En la cima llegan al m\'aximo. Cuando descienden vuelven
-a cero, y si siguen bajando entran al valle: el m\'inimo. Luego la colina
-vuelve a comenzar. Eso es lo que van a recorrer con los dedos.''
+Imaginen que caminan por una colina. Cuando ascienden, el valor de la funci\'on
+crece. En la cima llegan al m\'aximo. Cuando descienden vuelven a cero, y si
+siguen bajando entran al valle: el m\'inimo. Luego la colina vuelve a comenzar.
+Eso es lo que van a recorrer con los dedos.
 \end{quote}
 
-\textbf{Pregunta de investigaci\'on:} \textit{``?`Relaciona el estudiante la
-met\'afora de la colina con la curva matem\'atica?''}
+\textbf{Pregunta de investigaci\'on:} ?`relaciona el estudiante la met\'afora de
+la colina con la curva matem\'atica?
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \subsubsection*{Conceptualizaci\'on y Teorizaci\'on ---
@@ -334,8 +325,8 @@ La forma se repite                & La funci\'on es peri\'odica, $T=2\pi$ \\
   \text{rango}=[-1,\,1]
 \]
 
-\textbf{Pregunta de investigaci\'on:} \textit{``?`Asocia correctamente cada
-punto palpado con su valor num\'erico?''}
+\textbf{Pregunta de investigaci\'on:} ?`asocia correctamente cada punto palpado
+con su valor num\'erico?
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \subsubsection*{Aplicaci\'on y Profundizaci\'on del Seno \normalfont(25 min)}
@@ -343,25 +334,25 @@ punto palpado con su valor num\'erico?''}
 Una vez recorrida la curva, el estudiante consolida la lectura h\'aptica:
 
 \begin{itemize}[itemsep=3pt]
-  \item \textbf{Localizaci\'on de puntos clave:} el estudiante ubica sobre la
-        l\'amina los puntos $x=0$, $\pi/2$, $\pi$, $3\pi/2$ y $2\pi$, y dicta en
-        voz alta el valor correspondiente del seno.
-  \item \textbf{Ceros, m\'aximo y m\'inimo:} distingue con el tacto los lugares
-        donde la curva cruza el nivel medio (ceros), alcanza su punto m\'as alto
-        (cresta) y su punto m\'as bajo (valle).
-  \item \textbf{Verificaci\'on de la periodicidad:} recorre un \textbf{segundo
-        ciclo} y comprueba que la forma palpada es id\'entica a la del primero,
-        confirmando que el seno se repite cada $2\pi$.
+  \item Localizaci\'on de puntos clave: el estudiante ubica sobre la l\'amina los
+        puntos $x=0$, $\pi/2$, $\pi$, $3\pi/2$ y $2\pi$, y dicta en voz alta el
+        valor correspondiente del seno.
+  \item Ceros, m\'aximo y m\'inimo: distingue con el tacto los lugares donde la
+        curva cruza el nivel medio (ceros), alcanza su punto m\'as alto (cresta)
+        y su punto m\'as bajo (valle).
+  \item Verificaci\'on de la periodicidad: recorre un segundo ciclo y comprueba
+        que la forma palpada es id\'entica a la del primero, confirmando que el
+        seno se repite cada $2\pi$.
 \end{itemize}
 
 \begin{quote}
-\itshape ``Si vuelves a empezar el recorrido, tus dedos sienten exactamente la
-misma colina y el mismo valle. Eso es la periodicidad: la curva se repite sin
-cambiar su forma.''
+Si vuelves a empezar el recorrido, tus dedos sienten exactamente la misma colina
+y el mismo valle. Eso es la periodicidad: la curva se repite sin cambiar su
+forma.
 \end{quote}
 
-\textbf{Pregunta de investigaci\'on:} \textit{``?`Reconoce el estudiante de
-forma aut\'onoma que la forma del seno se repite cada $2\pi$?''}
+\textbf{Pregunta de investigaci\'on:} ?`reconoce el estudiante de forma aut\'onoma
+que la forma del seno se repite cada $2\pi$?
 
 % -----------------------------------------------------------
 \subsection{Evaluaci\'on}
@@ -380,9 +371,9 @@ dedos sobre la l\'amina del seno:
   \item ?`Cu\'al es el rango de valores que alcanza el seno?
 \end{enumerate}
 
-\textbf{Pregunta de investigaci\'on (actitudinal):} \textit{``?`Muestra el
-estudiante seguridad al explorar la l\'amina de forma aut\'onoma, sin esperar
-validaci\'on constante del docente?''}
+\textbf{Pregunta de investigaci\'on (actitudinal):} ?`muestra el estudiante
+seguridad al explorar la l\'amina de forma aut\'onoma, sin esperar validaci\'on
+constante del docente?
 
 \vspace{6pt}
 \textbf{Sumativa --- taller individual} (entrega pr\'oxima sesi\'on):
@@ -392,16 +383,16 @@ validaci\'on constante del docente?''}
         $\operatorname{sen}(x)$ para
         $x\in\{0,\;\pi/2,\;\pi,\;3\pi/2,\;2\pi\}$.
   \item Explica con tus palabras qu\'e significa que el seno sea una funci\'on
-        \textbf{peri\'odica} de per\'iodo $2\pi$.
+        peri\'odica de per\'iodo $2\pi$.
   \item Describe la diferencia entre el m\'aximo, el m\'inimo y los ceros de la
         funci\'on.
-  \item \textbf{Profundizaci\'on:} investiga un fen\'omeno real (por ejemplo el
-        sonido o las olas del mar) que se comporte como una onda senoidal.
+  \item Profundizaci\'on: investiga un fen\'omeno real (por ejemplo el sonido o
+        las olas del mar) que se comporte como una onda senoidal.
 \end{enumerate}
 
-\textbf{Pregunta de investigaci\'on (dominio):} \textit{``?`Puede el estudiante
-relacionar el valor h\'aptico de la l\'amina con el valor num\'erico de la
-funci\'on de forma aut\'onoma?''}
+\textbf{Pregunta de investigaci\'on (dominio):} ?`puede el estudiante relacionar
+el valor h\'aptico de la l\'amina con el valor num\'erico de la funci\'on de
+forma aut\'onoma?
 
 % ============================================================
 \section{Actividad de Cierre \normalfont--- S\'intesis y conclusi\'on
@@ -411,24 +402,24 @@ funci\'on de forma aut\'onoma?''}
 El docente retoma las ideas previas del inicio y las contrasta con lo aprendido:
 
 \begin{itemize}[itemsep=3pt]
-  \item ?`Cambi\'o su imagen mental de una ``ola''?
+  \item ?`Cambi\'o su imagen mental de una ola?
   \item ?`Qu\'e caracter\'isticas de la curva del seno te resultaron m\'as
         f\'aciles de reconocer con el tacto?
 \end{itemize}
 
-\textbf{Reflexi\'on escrita u oral:} cada estudiante completa (en tarjeta,
-Braille o verbalmente):
+\textbf{Reflexi\'on escrita u oral:} cada estudiante completa, oralmente o por
+escrito (en tarjeta, Braille o de viva voz):
 
-\begin{quote}
-\itshape ``Hoy aprend\'i que \underline{\hspace{4.5cm}}. Lo que m\'as me
-sorprendi\'o fue \underline{\hspace{4cm}}. Todav\'ia tengo dudas sobre
-\underline{\hspace{3.5cm}}.''
-\end{quote}
+\begin{itemize}[itemsep=3pt]
+  \item Hoy aprend\'i que\ldots
+  \item Lo que m\'as me sorprendi\'o fue\ldots
+  \item Todav\'ia tengo dudas sobre\ldots
+\end{itemize}
 
-\textbf{Tarea extraclase:} completar el taller sumativo de la secci\'on
-anterior (entrega pr\'oxima sesi\'on). Para profundizaci\'on: lectura sobre la
-aplicaci\'on de la funci\'on seno en el an\'alisis de se\~nales sonoras
-(nociones iniciales de ondas).
+\textbf{Tarea extraclase:} completar el taller sumativo de la secci\'on anterior
+(entrega pr\'oxima sesi\'on). Para profundizaci\'on: lectura sobre la aplicaci\'on
+de la funci\'on seno en el an\'alisis de se\~nales sonoras (nociones iniciales de
+ondas).
 
 \vspace{10pt}
 \begin{tabular}{|p{14.5cm}|}
@@ -449,11 +440,8 @@ aplicaci\'on de la funci\'on seno en el an\'alisis de se\~nales sonoras
 \end{tabular}
 
 \vspace{1.5cm}
-\noindent\rule{\linewidth}{0.4pt}
-\begin{center}
-\small Elaborado con base en la \textit{Sesi\'on Did\'actica: Funciones
-Trigonom\'etricas para Personas con Baja o Nula Visi\'on} y la
-\textit{Estructura de Unidad Did\'actica} institucional.
-\end{center}
+Elaborado con base en la Sesi\'on Did\'actica: Funciones Trigonom\'etricas para
+Personas con Baja o Nula Visi\'on, y la Estructura de Unidad Did\'actica
+institucional.
 
 \end{document}
