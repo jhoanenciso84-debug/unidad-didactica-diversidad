@@ -1,0 +1,24 @@
+# Archivos temporales y de salida de LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ilg
+*.ind
+*.dvi
+
+# PDF generado (descomenta si NO quieres versionar el PDF)
+# *.pdf
