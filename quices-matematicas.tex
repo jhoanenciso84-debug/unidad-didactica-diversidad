@@ -1,0 +1,188 @@
+%==============================================================
+%  QUICES DE MATEMATICAS - I.E. LIDERES DEL FUTURO
+%  Docente: Jhoan Alexander Enciso Romero
+%  5 quices (uno por pagina): grados 6, 7, 8-9, 10 y 11.
+%  Compilar con pdfLaTeX (compatible con Overleaf).
+%==============================================================
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{textcomp}
+\usepackage[margin=2.2cm,headheight=15pt]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{tikz}
+
+% ---------- Encabezado y pie de pagina ----------
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small Jhoan Alexander Enciso Romero}
+\rhead{\small I.E. Líderes del Futuro}
+\cfoot{\small\thepage}
+\renewcommand{\headrulewidth}{0.8pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ---------- Linea para escribir ----------
+\newcommand{\linea}[1]{\underline{\hspace{#1}}}
+
+% ---------- Macro del encabezado de cada quiz ----------
+% Uso: \encabezadoquiz{GRADO}{TEMAS}
+\newcommand{\encabezadoquiz}[2]{%
+  \begin{center}
+    {\large\bfseries INSTITUTO EDUCATIVO LÍDERES DEL FUTURO}\\[2pt]
+    {\itshape\small ``Hacia el camino de la excelencia''}\\[5pt]
+    {\Large\bfseries QUIZ DE MATEMÁTICAS --- GRADO #1}
+  \end{center}
+  \vspace{2pt}
+  \noindent\rule{\textwidth}{0.8pt}\\[6pt]
+  \noindent\textbf{Docente:} Jhoan Alexander Enciso Romero \hfill \textbf{Fecha:} \linea{3.2cm}\\[8pt]
+  \noindent\textbf{Nombre:} \linea{9cm} \hfill \textbf{Valor total:} 5.0\\[6pt]
+  \noindent\textbf{Temas:} #2\\[2pt]
+  \noindent\textit{\small Resuelve los 5 puntos. Cada punto tiene un valor de 1.0. Procedimiento ordenado.}
+  \par\vspace{4pt}\noindent\rule{\textwidth}{0.4pt}\par\vspace{8pt}
+}
+
+% ---------- Entorno para los puntos ----------
+\newlist{puntos}{enumerate}{1}
+\setlist[puntos]{label=\textbf{\arabic*.},leftmargin=*,itemsep=10pt,topsep=4pt}
+
+\begin{document}
+
+%==============================================================
+% QUIZ 1 - GRADO 6
+%==============================================================
+\encabezadoquiz{6\textdegree}{Sistemas de numeración --- Números primos y compuestos --- Múltiplos y divisores}
+
+\begin{puntos}
+  \item \textbf{Sistemas de numeración.} Escribe el número $4\,825$ en su descomposición según el valor posicional
+        (unidades, decenas, centenas, etc.) y exprésalo en números romanos.
+
+  \item \textbf{Números primos y compuestos.} Clasifica cada número como \emph{primo} o \emph{compuesto} y justifica:
+        \[ 17, \qquad 21, \qquad 29, \qquad 36, \qquad 51. \]
+
+  \item \textbf{Múltiplos.} Escribe los primeros cinco múltiplos de $8$ y los primeros cinco múltiplos de $6$.
+        Luego señala un múltiplo común a ambos.
+
+  \item \textbf{Divisores.} Halla todos los divisores de $24$ y todos los divisores de $30$.
+
+  \item \textbf{Aplicación (m.c.m. y M.C.D.).} Dos buses salen de la misma terminal: uno cada $12$ minutos y otro
+        cada $18$ minutos. ¿Cada cuántos minutos volverán a salir al mismo tiempo? (Calcula el m.c.m.)
+        Además, halla el M.C.D. de $12$ y $18$.
+\end{puntos}
+
+\newpage
+
+%==============================================================
+% QUIZ 2 - GRADO 7
+%==============================================================
+\encabezadoquiz{7\textdegree}{Números enteros --- Operaciones con enteros --- Plano cartesiano --- Expresiones algebraicas --- Polígonos y triángulos}
+
+\begin{puntos}
+  \item \textbf{Números enteros.} Ordena de menor a mayor y ubícalos en una recta numérica:
+        \[ -5,\quad 3,\quad -1,\quad 0,\quad -8,\quad 4. \]
+
+  \item \textbf{Operaciones con enteros.} Resuelve respetando el orden de las operaciones:
+        \[ \text{a) } (-8)+(-3)-(-5) \qquad\qquad \text{b) } (-4)\times 3 + (-6)\div 2. \]
+
+  \item \textbf{Plano cartesiano.} Ubica en el plano los puntos
+        $A(2,3)$, $B(-4,1)$, $C(-3,-2)$ y $D(0,-4)$; indica el cuadrante de cada uno.
+        \begin{center}
+        \begin{tikzpicture}[scale=0.45]
+          \draw[step=1,gray!35,very thin] (-5,-5) grid (5,5);
+          \draw[->] (-5.5,0)--(5.5,0) node[right]{$x$};
+          \draw[->] (0,-5.5)--(0,5.5) node[above]{$y$};
+          \foreach \x in {-5,-4,-3,-2,-1,1,2,3,4,5} \draw (\x,0.12)--(\x,-0.12) node[below,scale=0.6]{$\x$};
+          \foreach \y in {-5,-4,-3,-2,-1,1,2,3,4,5} \draw (0.12,\y)--(-0.12,\y) node[left,scale=0.6]{$\y$};
+        \end{tikzpicture}
+        \end{center}
+
+  \item \textbf{Expresiones algebraicas.} Reduce los términos semejantes y luego evalúa para $x=2$:
+        \[ 3x + 5 - x + 7 - 2x. \]
+
+  \item \textbf{Polígonos y triángulos.} Los ángulos internos de un triángulo suman $180^{\circ}$.
+        Si dos ángulos miden $50^{\circ}$ y $65^{\circ}$, halla el tercero y clasifica el triángulo según sus ángulos.
+\end{puntos}
+
+\newpage
+
+%==============================================================
+% QUIZ 3 - GRADOS 8 Y 9
+%==============================================================
+\encabezadoquiz{8\textdegree\ Y 9\textdegree}{Monomios y polinomios}
+
+\begin{puntos}
+  \item \textbf{Monomios.} Dado el monomio $-5x^{3}y^{2}$, indica:
+        a) el coeficiente, \quad b) la parte literal, \quad c) el grado.
+
+  \item \textbf{Reducción de términos semejantes.} Simplifica:
+        \[ 7x^{2} - 3x + 5 + 2x^{2} + 4x - 9. \]
+
+  \item \textbf{Suma de polinomios.} Sean $P(x)=3x^{2}-2x+1$ y $Q(x)=-x^{2}+5x-4$.
+        Halla $P(x)+Q(x)$.
+
+  \item \textbf{Resta de polinomios.} Calcula:
+        \[ \bigl(4x^{3}-2x+6\bigr) - \bigl(x^{3}+3x^{2}-5\bigr). \]
+
+  \item \textbf{Multiplicación y valor numérico.}
+        a) Multiplica $-3x\,(2x^{2}-x+4)$. \quad
+        b) Halla el valor numérico de $P(x)=2x^{2}-3x+1$ cuando $x=2$.
+\end{puntos}
+
+\newpage
+
+%==============================================================
+% QUIZ 4 - GRADO 10
+%==============================================================
+\encabezadoquiz{10\textdegree}{Ley de senos y ley de cosenos}
+
+\begin{center}\small Usa las leyes:\quad
+$\dfrac{a}{\sin A}=\dfrac{b}{\sin B}=\dfrac{c}{\sin C}$ \qquad\qquad
+$a^{2}=b^{2}+c^{2}-2bc\cos A$
+\end{center}
+\vspace{4pt}
+
+\begin{puntos}
+  \item \textbf{Ley de senos (lado).} En el triángulo $ABC$ se tiene $A=40^{\circ}$, $B=60^{\circ}$ y $a=8$.
+        Halla la longitud del lado $b$.
+
+  \item \textbf{Ley de senos (ángulo).} En un triángulo $a=10$, $A=30^{\circ}$ y $b=7$.
+        Determina la medida del ángulo $B$.
+
+  \item \textbf{Ley de cosenos (lado).} En el triángulo $ABC$, $b=5$, $c=8$ y el ángulo $A=60^{\circ}$.
+        Calcula el lado $a$.
+
+  \item \textbf{Ley de cosenos (ángulo).} Un triángulo tiene lados $a=7$, $b=9$ y $c=12$.
+        Halla la medida del ángulo $C$.
+
+  \item \textbf{Aplicación.} Desde un punto parten dos caminos rectos que forman un ángulo de $70^{\circ}$.
+        Una persona recorre $300$ m por uno y otra recorre $450$ m por el otro.
+        ¿Qué distancia separa a las dos personas?
+\end{puntos}
+
+\newpage
+
+%==============================================================
+% QUIZ 5 - GRADO 11
+%==============================================================
+\encabezadoquiz{11\textdegree}{Funciones --- Tipos de funciones --- Funciones lineales y cuadráticas}
+
+\begin{puntos}
+  \item \textbf{Evaluación de funciones.} Dada $f(x)=2x^{2}-3x+1$, calcula $f(2)$ y $f(-1)$.
+
+  \item \textbf{¿Es función?} Indica cuál de las siguientes relaciones \emph{es} una función y explica por qué:
+        \[ \text{a) } \{(1,2),(1,3),(2,4)\} \qquad\qquad \text{b) } \{(0,1),(1,2),(2,3)\}. \]
+
+  \item \textbf{Función lineal.} Halla la ecuación de la recta que pasa por el punto $(0,-2)$ y tiene pendiente $m=3$.
+        Indica el corte con el eje $y$ y bosqueja su gráfica.
+
+  \item \textbf{Función cuadrática.} Para $f(x)=x^{2}-4x+3$ determina:
+        a) el vértice, \quad b) las raíces (cortes con el eje $x$), \quad c) el corte con el eje $y$.
+
+  \item \textbf{Tipos de funciones.} Clasifica cada función como \emph{lineal}, \emph{cuadrática} o \emph{constante}:
+        \[ \text{a) } f(x)=3x-1, \qquad \text{b) } g(x)=x^{2}+2, \qquad \text{c) } h(x)=5. \]
+\end{puntos}
+
+\end{document}
